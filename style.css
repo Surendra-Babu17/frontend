@@ -371,7 +371,7 @@
   .top-section {
     flex-direction: column;
     height: auto ;
-    margin-bottom: 00px;
+   
   }
 
   .top-left {
@@ -413,7 +413,9 @@
     gap:12px;
     text-align: center;
     justify-content:center;
-    width:80%;
+    width:100%;
+    margin-left: 10%;
+    margin-right: 10%;
    
    
   }
@@ -423,7 +425,7 @@
 .card{
     width:70%;
     max-width:720px;
-    padding-right:9px;
+    padding-right:29px;
     margin:0 auto;
     
     border-radius: 0px;

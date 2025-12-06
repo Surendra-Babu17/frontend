@@ -162,43 +162,45 @@
   .top-left p{
     margin-bottom: 70px;
   }
-  .top-right{width:100%; height:100vh;}
-    .nav{
+  .top-right{width:100%; height:120vh;}
+ .burger {
+    display: block !important;
+    z-index: 9999 !important;
+  }
+
+  /* NAV LINKS → HIDDEN DEFAULT (NO SPACE CREATED) */
+  .nav-links {
+    position: fixed !important;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
     background: var(--nav-bg);
-    height: var(--nav-h);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position:sticky;
-    top:0;
-    z-index:500;
-    
+    flex-direction: column !important;
+    gap: 9px !important;
+    padding: 10px 10px !important;
+    transform: translateY(-120%);
+    transition: .25s ease;
+    z-index: 9998;
+    text-align: center;
+
   }
-  .nav-inner{
-    width:100%;
-    max-width:1400px;
-    margin:0 auto;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position:relative;
-    padding:0 12px;
+
+  /* NAV OPEN */
+  .nav-links.open {
+    transform: translateY(0);
+   
   }
-  .nav-links{
-    display:flex;
-    gap:2px;
-    align-items:center;
-    justify-content:center;
-    margin-left: 0;
-    margin-right: 0;
+
+  /* TEXT SIZE */
+  .nav-links a {
+    font-size: 18px !important;
+    letter-spacing: 1px !important;
   }
-  .nav-links a{
-    text-decoration:none;
-    color:#111;
-    font-weight:800;
-    letter-spacing:2px;
-    font-family: 'Times New Roman', Times, serif;
-    padding:6px 4px;
+
+  /* NAV INNER ALIGNMENT */
+  .nav-inner {
+    justify-content: flex-start !important;
+    padding-left: 12px !important;
   }
 
   
@@ -344,17 +346,19 @@
     right: 0;
     background: var(--nav-bg);
     flex-direction: column !important;
-    gap: 14px !important;
+    gap: 9px !important;
     padding: 10px 10px !important;
     transform: translateY(-120%);
     transition: .25s ease;
     z-index: 9998;
     text-align: center;
+
   }
 
   /* NAV OPEN */
   .nav-links.open {
     transform: translateY(0);
+   
   }
 
   /* TEXT SIZE */
@@ -401,8 +405,8 @@
     gap:50px;
     overflow:auto;
     padding-bottom: 80px;
-    margin-right: 20px;
-    margin-right: 20px;
+    margin-right: 1%;
+    margin-left: 1%;
   }
 
   .gallery{

@@ -314,11 +314,11 @@
     margin-left: 300px;
   }
 
-  .col-left img{width:180px;height:180px ;}
-  .col-mid img{width:160px;height:calc(180px*2 + 16px);}
+  .col-left img{width:250px;height:250px ;}
+  .col-mid img{width:200px;height:calc(180px*2 + 150px);}
 
   .card{
-    width:50%;
+    width:70%;
     max-width:720px;
     padding:24px;
     margin:0 auto;

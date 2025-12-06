@@ -427,6 +427,14 @@
     margin:0 auto;
     padding-right: 60px;
   }
+  .card h2{
+    font-size: 16px;
+    font-weight: 800;
+
+  }
+  .card p{
+    font-size: 9px;
+  }
 .nav-links.open{ transform:translateY(0); }
 }
 

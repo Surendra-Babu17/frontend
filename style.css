@@ -151,7 +151,7 @@
 
 /* ===== RESPONSIVE ===== */
 
-@media (max-width:1024px){
+@media (min-width:600px) and (max-width:1023px){
   .top-section{flex-direction: row;}
   .top-left{width:100%; padding:30px; z-index:1;}
   .top-left h1{
@@ -186,9 +186,11 @@
   }
   .nav-links{
     display:flex;
-    gap:20px;
+    gap:2px;
     align-items:center;
     justify-content:center;
+    margin-left: 0;
+    margin-right: 0;
   }
   .nav-links a{
     text-decoration:none;
@@ -206,7 +208,7 @@
     justify-content:flex-start;
     height: auto; 
     padding:50px;
-    gap:50px;
+    gap:10px;
     overflow:auto;
     padding-bottom: 80px;
   }
@@ -223,7 +225,7 @@
   .col-mid img{width:160px;height:calc(180px*2 + 16px);}
 
   .card{
-    width:60%;
+    width:70%;
     max-width:720px;
     padding:24px;
     margin:0 auto;
@@ -238,7 +240,7 @@
 
 /* DESKTOP: ensure spacing stays consistent without huge manual margins */
 
-@media (min-width:1024px){
+@media(min-width:1024px){
  .top-section{flex-direction: row;}
   .top-left{width:100%; padding:30px; z-index:1;}
   .top-left h1{
@@ -326,7 +328,7 @@
 
 
 /* ======== ONLY MOBILE (PHONES) ========= */
-@media (max-width: 480px) and (max-width:768px) {
+@media (min-width: 0px) and (max-width:599px) {
 
   /* BURGER ALWAYS VISIBLE */
   .burger {
@@ -343,7 +345,7 @@
     background: var(--nav-bg);
     flex-direction: column !important;
     gap: 14px !important;
-    padding: 20px 10px !important;
+    padding: 10px 10px !important;
     transform: translateY(-120%);
     transition: .25s ease;
     z-index: 9998;
@@ -366,74 +368,68 @@
     justify-content: flex-start !important;
     padding-left: 12px !important;
   }
-
-  /* ===== TOP SECTION ===== */
-  .top-section {
-    flex-direction: column;
-    height: auto ;
-   
+  .top-section{flex-direction: column;}
+  .top-left{width:100%; padding:30px; z-index:1;}
+  .top-left h1{
+    font-size:42px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
-
-  .top-left {
-    width: 100% !important;
-    padding: 25px !important;
-    padding-bottom: 50px;
+  .top-left p{
+    margin-bottom: 70px;
   }
-
-  .top-left h1 {
-    font-size: 32px !important;
+  .top-right{width:100%; height:100vh;}
+    .nav{
+    background: var(--nav-bg);
+    height: var(--nav-h);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:sticky;
+    top:0;
+    z-index:500;
+    
   }
-/* 
-  .top-right {
-    width: 100% !important;
-    height: auto !important;
-  } */
-
-  .top-right img {
-    width: 100% !important;
-    height: 350px !important;
-    object-fit: cover !important;
-  }
-
-  /* ===== BOTTOM SECTION ===== */
- 
+  
+  
   .bottom-section{
-    flex-direction:column;
+    flex-direction:row;
     align-items:center;
     justify-content:flex-start;
-    height: auto; /* let content determine height on tablets */
+    height: auto; 
     padding:50px;
     gap:50px;
     overflow:auto;
     padding-bottom: 80px;
+    margin-right: 20px;
+    margin-right: 20px;
   }
 
   .gallery{
-    flex-direction:row; /* gallery stays horizontal */
+    flex-direction:row; 
     gap:12px;
-    text-align: center;
+    align-items:flex-start;
     justify-content:center;
     width:100%;
-    margin-left: 10%;
-    margin-right: 10%;
-   
-   
   }
 
-  .col-left img{width:150px;height:200px;}
-  .col-mid img{width:200px;height:calc(180px*2 + 55px);}
-.card{
-    width:70%;
+  .col-left img{width:180px;height:180px;}
+  .col-mid img{width:160px;height:calc(180px*2 + 16px);}
+
+  .card{
+    width:60%;
     max-width:720px;
-    padding-right:29px;
+    padding:24px;
     margin:0 auto;
-    
-    border-radius: 0px;
+    padding-right: 10px;
   }
+.nav-links.open{ transform:translateY(0); }
+}
 
- 
+
+  
  
   .gap-5 {
     height: 5px !important;
   }
-}
+

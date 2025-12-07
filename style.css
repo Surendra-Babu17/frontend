@@ -161,6 +161,9 @@ html, body {
   background: #fef2b8;
   justify-content: center;
   align-items: start;
+  margin-bottom: 100px;
+  margin-top: 70px;
+  height:100vh
 }
 
 .gallery {
@@ -182,12 +185,13 @@ html, body {
 
 .col-mid img {
   width: 420px;
+  padding-right: 20px;
   height: calc(280px*2 + 16px);
   object-fit: cover;
 }
 
 .card {
-  width: 50px;
+  width: 90%;
   max-width: 360px;
   padding: 30px;
   background: #ff6f6f;
@@ -275,11 +279,12 @@ html, body {
     grid-template-columns: auto 300px;
     gap: 20px;
     padding: 50px;
+    margin-bottom: 100px;
   }
 
-  .col-left img { width: 180px; height: 180px; }
-  .col-mid img { width: 160px; height: calc(180px*2 + 16px); }
-  .card { width: 100%; max-width: 300px; padding: 24px; margin-top: 120px; }
+  .col-left img { width: 200px; height: 180px; }
+  .col-mid img { width: 200px; height: calc(180px*2 + 16px); }
+  .card { width: 90%; max-width: 300px; padding: 24px; margin-top: 120px; margin-right: 40px; }
 }
 
 /* DESKTOP (1024px+) */
@@ -294,6 +299,7 @@ html, body {
     grid-template-columns: auto 360px; /* gallery left, card right */
     gap: 50px;
     padding: 50px 40px;
+    margin-bottom: 100px;
   }
   .nav-links {
   display: flex;
@@ -314,8 +320,8 @@ html, body {
 
 
   .col-left img { width: 250px; height: 250px; }
-  .col-mid img { width: 200px; height: calc(180px*2 + 150px); }
-  .card { width: 100%; max-width: 360px; padding: 30px; }
+  .col-mid img { width: 260px; height: calc(180px*2 + 150px); }
+  .card { width: 80%; max-width: 360px; padding: 30px; }
 }
 @media (max-width:320px){
   .top-section {
@@ -348,6 +354,7 @@ html, body {
     align-items: center;
     gap: 40px;
     padding: 40px 20px;
+    margin-bottom: 100px;
   }
 
   .col-left img { width: 120px; height: 160px; }

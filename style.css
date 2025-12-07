@@ -246,6 +246,7 @@ html, body {
     align-items: center;
     gap: 40px;
     padding: 40px 20px;
+    height:100vh;
   }
 
   .col-left img { width: 160px; height: 160px; }
@@ -280,6 +281,7 @@ html, body {
     gap: 20px;
     padding: 50px;
     margin-bottom: 100px;
+    height:100vh;
   }
 
   .col-left img { width: 200px; height: 180px; }
@@ -300,6 +302,8 @@ html, body {
     gap: 50px;
     padding: 50px 40px;
     margin-bottom: 100px;
+    height:100vh;
+    width: 100%;
   }
   .nav-links {
   display: flex;
@@ -355,6 +359,7 @@ html, body {
     gap: 40px;
     padding: 40px 20px;
     margin-bottom: 100px;
+    height:100vh;
   }
 
   .col-left img { width: 120px; height: 160px; }

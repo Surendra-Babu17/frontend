@@ -113,7 +113,8 @@ html, body {
 .top-left h1 {
   font-size: 50px;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
+  
 }
 
 .top-left p {
@@ -287,7 +288,7 @@ html, body {
   .top-left { padding: 40px; }
   .top-left h1 { font-size: 50px; }
   .top-right { height: 100vh; }
-  
+ 
   .bottom-section {
     display: grid;
     grid-template-columns: auto 360px; /* gallery left, card right */
